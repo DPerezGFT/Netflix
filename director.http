@@ -1,0 +1,10 @@
+GET http://localhost:8080/director
+
+###
+
+GET http://localhost:8080/director/1
+
+###
+
+GET http://localhost:8080/title
+
