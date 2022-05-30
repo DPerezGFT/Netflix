@@ -1,4 +1,4 @@
-package com.example.netflix.actors;
+package com.example.netflix.categories;
 
 import com.example.netflix.titles.Title;
 import lombok.Getter;
@@ -14,13 +14,13 @@ import java.util.Set;
 @NoArgsConstructor
 @Entity
 @ToString
-public class Actor {
+public class Category {
 
   @ManyToMany
   @JoinTable(
-      name = "title_actor",
+      name = "title_category",
       joinColumns = @JoinColumn(name = "title_id"),
-      inverseJoinColumns = @JoinColumn(name = "actor_id")
+      inverseJoinColumns = @JoinColumn(name = "category_id")
   )
   Set<Title> titles;
   @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
